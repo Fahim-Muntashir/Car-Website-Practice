@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply text-accent bg-body;
+    @apply text-primary bg-body;
   }
 
   .p {
