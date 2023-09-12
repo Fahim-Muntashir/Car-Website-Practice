@@ -7,8 +7,11 @@ import { useMediaQuery } from "react-responsive";
 // icons
 
 import { BiMenuAltRight, BiX } from "react-icons/bi";
+import { SearchContext } from "../context/search";
 
 const Header = () => {
+  const { setSearchActive } = useContext(SearchContext);
+
   // Initialize state variables separately
   const [header, setHeader] = useState(false);
   const [nav, setNav] = useState(false);
@@ -23,6 +26,13 @@ const Header = () => {
         setHeader(true);
       } else {
         setHeader(false);
+      }
+
+      // search if
+      if (window.scrollY > 800) {
+        setSearchActive(true);
+      } else {
+        setSearchActive(false);
       }
     };
 
@@ -85,7 +95,7 @@ const Header = () => {
           </Link>
           <Link
             className="cursor-pointer"
-            to="car"
+            to="cars"
             activeClass="active"
             smooth={desktopMode}
             spy={true}

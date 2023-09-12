@@ -1,5 +1,31 @@
+"use client";
+
+import { useContext } from "react";
+// components
+import Search from "./Search";
+
+// comtext
+import { SearchContext } from "../context/search";
+
 const Hero = () => {
-  return <div>Hero</div>;
+  const { searchActive } = useContext(SearchContext);
+
+  return (
+    <section className="h-screen xl:h-[90vh] bg-[#b2b7c2]/10 " id="home">
+      <div className="container mx-auto h-full xl:pt-10">Hero Container</div>
+
+      {searchActive ? (
+        <div className="fixed top-[80px] z-10 w-full max-w-[1920]">
+          <Search></Search>
+        </div>
+      ) : (
+        <div className="-mt-12 w-full max-w-[1300px] mx-auto">
+          <Search></Search>
+        </div>
+      )}
+      <Search></Search>
+    </section>
+  );
 };
 
 export default Hero;
