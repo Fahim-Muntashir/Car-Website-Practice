@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="container mx-auto h-full xl:pt-10">Hero Container</div>
 
       {searchActive ? (
-        <div className="fixed top-[80px] z-10 w-full max-w-[1920]">
+        <div className="fixed top-[80px] z-10 w-full max-w-[1920px]">
           <Search></Search>
         </div>
       ) : (
@@ -23,7 +23,6 @@ const Hero = () => {
           <Search></Search>
         </div>
       )}
-      <Search></Search>
     </section>
   );
 };
