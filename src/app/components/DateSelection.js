@@ -11,7 +11,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 // react date
 import { DateRange } from "react-date-range";
-import { format, addDays } from "date-fns";
+import { format, addDays, formatRFC3339 } from "date-fns";
 // react date range css
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
@@ -33,6 +33,19 @@ const DateSelection = () => {
           <div className="flex flex-col xl:flex-row items-center xl:gap-x-2 gap-y-2 xl:gap-y-0">
             <FaCalendarAlt className="text-accent"></FaCalendarAlt>
             <div className="text-[15px] uppercase ">Select Date</div>
+            <div className="flex items-center gap-x-3 xl:ml-6">
+              <div className="text-[13px] font-medium text-secondary">
+                {format(date[0].startDate, "dd/MM/yyyy")}
+              </div>
+              <FaArrowRightLong className="text-accent text-[12px]"></FaArrowRightLong>
+              <div className="text-[13px] font-medium text-secondary">
+                {date[0].endDate ? (
+                  <div>{format(date[0].endDate, "dd/MM/yyyy")}</div>
+                ) : (
+                  <div>{format(date[0].startDate, "dd/MM/yyyy")}</div>
+                )}
+              </div>
+            </div>
           </div>
         </Menu.Button>
         {/* menu */}
