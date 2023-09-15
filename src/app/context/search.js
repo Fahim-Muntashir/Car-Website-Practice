@@ -12,7 +12,7 @@ export const SearchContextProvider = ({ children }) => {
   return (
     <SearchContext.Provider value={{ searchActive, setSearchActive }}>
       {children}
-    </SearchContext.Provider>
+    </SearchContext.Provider>s
   );
 };
 

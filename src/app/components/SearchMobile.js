@@ -1,6 +1,6 @@
 // components
 import DateSelection from "./DateSelection";
-import HourSelection from "./DateSelection";
+import HourSelection from "./HourSelection";
 import LocationSelection from "./LocationSelection";
 
 const SearchMobile = () => {
