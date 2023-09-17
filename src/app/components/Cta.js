@@ -12,7 +12,7 @@ import { fadeIn } from "/variants";
 const Cta = () => {
   return (
     <section
-      className="pt-24 xl:pt-48 flex items-center pb-0 bg-[#b2b72c]/10"
+      className="pt-24 xl:pt-48 flex items-center overflow-hidden pb-0 bg-[#b2b72c]/10"
       id="contact"
     >
       <div className="container mx-auto">
