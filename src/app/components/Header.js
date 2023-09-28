@@ -104,12 +104,12 @@ const Header = () => {
           </Link>
           <Link
             className="cursor-pointer"
-            to="why"
+            to="certificate"
             activeClass="active"
             smooth={desktopMode}
             spy={true}
           >
-            Why Us
+            Certificate
           </Link>
           <Link
             className="cursor-pointer"
@@ -136,7 +136,7 @@ const Header = () => {
             smooth={desktopMode}
             spy={true}
           >
-            See All Cars
+            See More
           </Link>
         </nav>
       </div>

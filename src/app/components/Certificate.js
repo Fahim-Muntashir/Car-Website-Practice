@@ -2,7 +2,7 @@ import React from "react";
 
 const certificate = () => {
   return (
-    <div>
+    <section id="certificate">
       <div class="grid grid-cols-2 md:grid-cols-3 gap-4 container mx-auto">
         <div>
           <img
@@ -47,7 +47,7 @@ const certificate = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
