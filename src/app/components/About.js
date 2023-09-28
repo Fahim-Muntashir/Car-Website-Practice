@@ -28,7 +28,7 @@ const About = () => {
   });
 
   return (
-    <section className="section flex items-center" id="about" ref={ref}>
+    <section className="section flex items-center my-44" id="about" ref={ref}>
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:justify-between">
           {/* Image */}
@@ -67,66 +67,20 @@ const About = () => {
                 viewport={{ once: false, amount: 0.6 }}
                 className="mb-[42px] max-w-md"
               >
-                Rent, choose, and repair with ease.Our convention
-                locaitons,siverse car types, and reliable repair ensure a
-                seamless acar experience.
+                Life's brevity serves as a powerful reminder: cherish every
+                moment with a positive outlook, for each fleeting second holds
+                the potential to infuse our lives with joy and meaning.
               </motion.p>
               {/* States*/}
-              <motion.div
-                variants={fadeIn("up", 1)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.2 }}
-                className="flex items-center gap-x-8 mb-12"
-              >
-                {/* Car types */}
-                <div className="flex flex-col w-[100px]">
-                  <MdOutlineDirectionsCar className="text-5xl text-accent mb-2"></MdOutlineDirectionsCar>
-                  <div className="text-3xl font-black md-2">
-                    {inView ? (
-                      <CountUp start={0} end={50} duration={3} delay={0.5} />
-                    ) : null}{" "}
-                    +
-                  </div>
-                  <div className="uppercase text-[13px] font-semibold text-secondary">
-                    car <br /> types
-                  </div>
-                </div>
-                {/* remtal outlets */}
-                <div className="flex flex-col w-[100px]">
-                  <MdOutlineMapsHomeWork className="text-5xl text-accent mb-2"></MdOutlineMapsHomeWork>
-                  <div className="text-3xl font-black md-2">
-                    {inView ? (
-                      <CountUp start={0} end={120} duration={3} delay={0.5} />
-                    ) : null}{" "}
-                  </div>
-                  <div className="uppercase text-[13px] font-semibold text-secondary">
-                    car <br /> types
-                  </div>
-                </div>
-                {/* Repair Points */}
-                <div className="flex flex-col w-[100px]">
-                  <MdOutlineDirectionsCar className="text-5xl text-accent mb-2"></MdOutlineDirectionsCar>
-                  <div className="text-3xl font-black md-2">
-                    {inView ? (
-                      <CountUp start={0} end={60} duration={4} delay={0.5} />
-                    ) : null}{" "}
-                    +
-                  </div>
-                  <div className="uppercase text-[13px] font-semibold text-secondary">
-                    repair <br /> points
-                  </div>
-                </div>
-                {/* btn */}
-              </motion.div>
+
               <motion.button
                 variants={fadeIn("up", 1)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.6 }}
-                className="hidden xl:block bg-accent hover:bg-accent-hover rounded w-full h-16 uppercase font font-medium text-white tracking-[2px] text-[13px] max-w-[184px]"
+                className=" xl:block bg-accent hover:bg-accent-hover rounded w-full h-16 uppercase font font-medium text-white tracking-[2px] text-[13px] max-w-[184px]"
               >
-                See All Cars
+                See More in Details
               </motion.button>
             </div>
           </div>
