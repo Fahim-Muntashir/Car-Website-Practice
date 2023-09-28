@@ -1,24 +1,22 @@
 import About from "./components/About";
 import BackToTopBtn from "./components/BackToTopBtn";
-import Cars from "./components/Cars";
+import Blog from "./components/Blog";
 import Cta from "./components/Cta";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Testimonial from "./components/Testimonial";
-import Why from "./components/Why";
+import Photography from "./components/Photography";
+import Certificate from "./components/Certificate";
 
 export default function Home() {
   return (
     <main className="max-w-[1920px] bg-white mx-auto relative overflow-hidden">
-      <Header></Header>
       <Hero></Hero>
-      <Cars></Cars>
       <About />
-      <Why />
+      <Certificate />
+      <Blog />
+      <Photography />
       <Testimonial />
       <Cta />
-      <Footer></Footer>
       <BackToTopBtn />
     </main>
   );

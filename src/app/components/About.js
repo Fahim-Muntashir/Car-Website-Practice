@@ -41,7 +41,7 @@ const About = () => {
           >
             <Image
               className="rounded-[20px]"
-              src={"/images/about/car01.png"}
+              src={"/images/about/about.png"}
               width={600}
               height={448}
               alt=""
@@ -58,7 +58,7 @@ const About = () => {
                 viewport={{ once: false, amount: 0.6 }}
                 className="h2"
               >
-                Car Services Simplified.
+                Discover the Inspiring Story of My Journey{" "}
               </motion.h2>
               <motion.p
                 variants={fadeIn("up", 0.2)}

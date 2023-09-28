@@ -1,24 +1,17 @@
 "use client";
 
-import { useContext } from "react";
-// components
-import Search from "./Search";
-
-// comtext
-import { SearchContext } from "../context/search";
-
-// image next
 import Image from "next/image";
 
 // motion
-import { motion, easeInOut } from "framer-motion";
+import { motion } from "framer-motion";
+//icons
+import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
+import { SiGooglescholar } from "react-icons/si";
 
 // varients
 import { fadeIn } from "../../../variants";
 
 const Hero = () => {
-  const { searchActive } = useContext(SearchContext);
-
   return (
     <section className="h-screen xl:h-[90vh] bg-[#b2b7c2]/10 " id="home">
       <div className="container mx-auto h-full xl:pt-10">
@@ -33,8 +26,9 @@ const Hero = () => {
               viewport={{ once: false, amount: 0.6 }}
               className="h1"
             >
-              Explore the Finest <span className="text-accent">Global</span>
-              Offers
+              Hello I am <span className="text-accent">Mahmudul Hasan </span>
+              <br />
+              Reseachercer
             </motion.h1>
             <motion.p
               variants={fadeIn("down", 0.4)}
@@ -55,24 +49,10 @@ const Hero = () => {
               viewport={{ once: false, amount: 0.8 }}
               className="flex gap-x-3 justify-center xl:justify-start"
             >
-              {/* btn app store */}
-              <button className="btn-cta">
-                <Image
-                  src={"/icons/buttons/app-store.svg"}
-                  width={132}
-                  height={36}
-                  alt=""
-                ></Image>
-              </button>
-              {/* btn google */}
-              <button className="btn-cta">
-                <Image
-                  src={"/icons/buttons/google-play.svg"}
-                  width={132}
-                  height={36}
-                  alt=""
-                ></Image>
-              </button>
+              <BsFacebook></BsFacebook>
+              <BsInstagram />
+              <BsLinkedin />
+              <SiGooglescholar />
             </motion.div>
           </div>
           {/* img  car*/}
@@ -81,10 +61,10 @@ const Hero = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.6 }}
-            className="relative w-full h-full max-h-[50vh] md:max-w-[70vw] xl:max-w-[860px] xl:max-h-[542px] xl:absolute xl:right-0 xl:top-48"
+            className="relative w-full h-full max-h-[50vh] md:max-w-[70vw] xl:max-w-[860px] xl:max-h-[542px] xl:absolute xl:right-0 flex justify-center items-center"
           >
             <Image
-              src={"/images/hero/car.svg"}
+              src={"/images/hero/hero.svg"}
               fill
               alt=""
               style={{ objectFit: "contain" }}
@@ -93,28 +73,6 @@ const Hero = () => {
           </motion.div>
         </div>
       </div>
-
-      {searchActive ? (
-        <motion.div
-          initial={{ y: "-100%" }}
-          animate={{ y: 0 }}
-          transition={{ ease: easeInOut }}
-          className="fixed top-[80px] z-10 w-full max-w-[1920px]"
-        >
-          <Search></Search>
-        </motion.div>
-      ) : (
-        <div className="-mt-12 w-full max-w-[1300px] mx-auto">
-          <motion.div
-            variants={fadeIn("up", 0.8)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.2 }}
-          >
-            <Search></Search>
-          </motion.div>
-        </div>
-      )}
     </section>
   );
 };

@@ -2,7 +2,6 @@
 import { useContext, useEffect, useState } from "react";
 import Image from "next/image";
 import { Link } from "react-scroll";
-import SearchMobile from "./SearchMobile";
 import { useMediaQuery } from "react-responsive";
 // icons
 
@@ -93,15 +92,7 @@ const Header = () => {
           >
             Home
           </Link>
-          <Link
-            className="cursor-pointer"
-            to="cars"
-            activeClass="active"
-            smooth={desktopMode}
-            spy={true}
-          >
-            Car
-          </Link>
+
           <Link
             className="cursor-pointer"
             to="about"
@@ -147,8 +138,6 @@ const Header = () => {
           >
             See All Cars
           </Link>
-
-          <SearchMobile></SearchMobile>
         </nav>
       </div>
     </header>
