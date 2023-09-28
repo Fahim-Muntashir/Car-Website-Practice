@@ -42,40 +42,40 @@ const Footer = () => {
             </Link>
             {/* text */}
             <div className="text-secondary">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Life is too short, So, enjoy every moment positively......
             </div>
             {/* phone and email */}
-            <div className="flex flex-col gap-y-4 font-semibold">
+            <div className="flex flex-col gap-y-4">
               <div className="flex items-center gap-x-[10px]">
                 <FaPhone></FaPhone>
-                <div className="font-medium">(123)456-7890</div>
+                <div className="font-medium">+614 8036 3038</div>
               </div>
               <div className="flex items-center gap-x-[10px]">
                 <FaEnvelope />
-                <div className="font-medium">office@carland.com</div>
+                <div className="font-medium">mahmudulmoon123@gmail.com</div>
               </div>
             </div>
           </div>
           {/* links */}
           <div className="flex-1 flex-col xl:items-center">
             <div>
-              <h3 className="h3 font-bold mb-8">Company</h3>
-              <ul className="flex flex-col gap-y-4 font-semibold">
+              <h3 className="h3 font-bold mb-8">Website</h3>
+              <ul className="flex flex-col gap-y-4 ">
                 <li>
                   {" "}
-                  <a href="">New York</a>
+                  <a href="">Home</a>
                 </li>
                 <li>
-                  <a href="">Mobile</a>
+                  <a href="">About</a>
                 </li>
                 <li>
                   <a href="">Blog</a>
                 </li>
                 <li>
-                  <a href="">Careers</a>
+                  <a href="">Certificate</a>
                 </li>
                 <li>
-                  <a href="">How We Work</a>
+                  <a href="">Contact</a>
                 </li>
                 <li></li>
               </ul>
@@ -83,19 +83,22 @@ const Footer = () => {
           </div>{" "}
           {/* program */}
           <div className="flex-1">
-            <h3 className="h3 font-bold mb-8">Working Hours</h3>
+            <h3 className="h3 font-bold mb-8">Quick Link</h3>
             <div className="flex flex-col gap-y-4">
               <div className="flex gap-x-2">
-                <div className="text-secondary">Mon-Fri:</div>
-                <div className="font-semibold">09:00AM - 9:00pm</div>
+                <div className="text-secondary">Whatsapp</div>
               </div>
               <div className="flex gap-x-2">
-                <div className="text-secondary">Sat</div>
-                <div className="font-semibold">09:00AM - 7:00pm</div>
+                <div className="text-secondary">Facebook</div>
               </div>
               <div className="flex gap-x-2">
-                <div className="text-secondary">Sun</div>
-                <div className="font-semibold">Closed</div>
+                <div className="text-secondary">Instagram</div>
+              </div>
+              <div className="flex gap-x-2">
+                <div className="text-secondary">Youtube</div>
+              </div>
+              <div className="flex gap-x-2">
+                <div className="text-secondary">Linkedin</div>
               </div>
             </div>
           </div>
@@ -103,7 +106,7 @@ const Footer = () => {
           <div className="flex-1">
             <h3 className="h3 font-bold mb-8">Newsletter</h3>
             <div className="mb-9 text-secondary">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Explore my latest Blog for fresh insights and updates !
             </div>
             {/* form */}
             <form className="flex gap-x-2 h-14">

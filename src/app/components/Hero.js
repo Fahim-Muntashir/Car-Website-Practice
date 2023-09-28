@@ -1,12 +1,14 @@
 "use client";
 
 import Image from "next/image";
+import { Typewriter } from "react-simple-typewriter";
 
 // motion
 import { motion } from "framer-motion";
 //icons
 import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
 import { SiGooglescholar } from "react-icons/si";
+import { FiYoutube } from "react-icons/fi";
 
 // varients
 import { fadeIn } from "../../../variants";
@@ -28,7 +30,21 @@ const Hero = () => {
             >
               Hello I am <span className="text-accent">Mahmudul Hasan </span>
               <br />
-              Reseachercer
+              <Typewriter
+                words={[
+                  "Teacher",
+                  "Researcher",
+                  "Writer",
+                  "Content Creater!",
+                  "Programmer",
+                ]}
+                loop={5}
+                cursor
+                cursorStyle="_"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
             </motion.h1>
             <motion.p
               variants={fadeIn("down", 0.4)}
@@ -37,8 +53,9 @@ const Hero = () => {
               viewport={{ once: false, amount: 0.6 }}
               className="description max-w-[550px] mx-auto xl:mx-0 mb-6 xl:mb-10"
             >
-              Find your ideal roide for any adventure with our diverse range of
-              affordable and dependable car rentals.
+              Life's brevity serves as a powerful reminder: cherish every moment
+              with a positive outlook, for each fleeting second holds the
+              potential to infuse our lives with joy and meaning.
             </motion.p>
 
             {/* btns */}
@@ -47,12 +64,13 @@ const Hero = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.8 }}
-              className="flex gap-x-3 justify-center xl:justify-start"
+              className="flex gap-x-3 justify-center xl:justify-start xl:gap-x-6"
             >
-              <BsFacebook></BsFacebook>
-              <BsInstagram />
-              <BsLinkedin />
-              <SiGooglescholar />
+              <BsFacebook className="social-icon text-3xl text-blue-600 hover:text-blue-800" />
+              <BsInstagram className="social-icon text-3xl text-purple-600 hover:text-purple-800" />
+              <BsLinkedin className="social-icon text-3xl text-indigo-600 hover:text-indigo-800" />
+              <FiYoutube className="social-icon text-3xl text-red-600 hover:text-red-800" />
+              <SiGooglescholar className="text-3xl text-green-600 hover:text-green-800" />
             </motion.div>
           </div>
           {/* img  car*/}
